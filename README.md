@@ -48,6 +48,12 @@ Ensure you have [node](https://nodejs.org/) >= v16. Optionally, use [nvm](https:
     npm start
     ```
 
+5. Deploy online:
+   
+   ```bash
+    npm run deploy
+    ```
+
 By default, the application should be available at [http://localhost:3000/](http://localhost:3000/).
 
 ## 🚢 Deploying

@@ -9,21 +9,18 @@ const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
       <Link to="/" className="logo">
-        <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+        <img src={`${PUBLIC_URL}/images/portfolio.jpg`} alt="" />
       </Link>
       <header>
         <h2>Shouzhi&apos;Fang</h2>
-        <p><a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a></p>
+        <p><a href="mailto:frank.kid1412@gmail.com">frank dot kid1412 at gmail dot com</a></p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Shouzhi. I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni,
-        and the VP of Engineering at <a href="https://smileidentity.com">Smile Identity</a>. Previously,
-        I was the co-founder and CTO of <a href="https://arthena.com">Arthena</a>
-        , co-founder of <a href="https://matroid.com">Matroid</a>, and worked at
-        {' '}<a href="https://planet.com">Planet</a> and <a href="https://facebook.com">Facebook</a>.
+      <p>Hi, I&apos;m Shouzhi, a graduate student, Rutgers Alumni,
+        and a Software Engineer at Blackcowtech company.
       </p>
       <ul className="actions">
         <li>
@@ -34,7 +31,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Shouzhi &apos;Fang <Link to="/">https://frank1412.github.io</Link>.</p>
+      <p className="copyright">&copy; Shouzhi Fang <Link to="/">https://frank1412.github.io</Link>.</p>
     </section>
   </section>
 );

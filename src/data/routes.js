@@ -12,18 +12,18 @@ const routes = [
     label: 'Resume',
     path: '/resume',
   },
-  {
-    label: 'Projects',
-    path: '/projects',
-  },
-  {
-    label: 'Stats',
-    path: '/stats',
-  },
-  {
-    label: 'Contact',
-    path: '/contact',
-  },
+  // {
+  //   label: 'Projects',
+  //   path: '/projects',
+  // },
+  // {
+  //   label: 'Stats',
+  //   path: '/stats',
+  // },
+  // {
+  //   label: 'Contact',
+  //   path: '/contact',
+  // },
 ];
 
 export default routes;

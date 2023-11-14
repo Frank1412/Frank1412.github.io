@@ -13,7 +13,7 @@ const Job = ({
       <h4><a href={url}>{name}</a> - {position}</h4>
       <p className="daterange"> {dayjs(startDate).format('MMMM YYYY')} - {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}</p>
     </header>
-    {summary ? (
+    {/* {summary ? (
       <Markdown
         options={{
           overrides: {
@@ -27,7 +27,7 @@ const Job = ({
       >
         {summary}
       </Markdown>
-    ) : null}
+    ) : null} */}
     {highlights ? (
       <ul className="points">
         {highlights.map((highlight) => (
