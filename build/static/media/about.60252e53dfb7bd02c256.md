@@ -8,12 +8,13 @@ I'm a motivated software engineer, dedicated and results-driven DevOps Engineer 
 - My parents take me into intelligent games when I was 5 in the kindergarten. It is Chinese Weiqi. After that, I fell in love with 'Go' throughout my K-12 hours and got 5-degree in professional in Chinese Weiqi Associate. It paves a way for my future computer career. To this day, I still keep playing Go on a break. -->
 
 
-<!-- # I like
+# I like
+
 - Badminton
 - Mountain Hiking
 - Running
 - Go
-- Cooking -->
+- Cooking
 
 
 # Travel / Geography
