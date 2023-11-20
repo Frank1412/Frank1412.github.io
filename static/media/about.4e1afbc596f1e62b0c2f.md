@@ -1,7 +1,7 @@
 
 # Intro
 
-I'm a motivated software engineer, dedicated and results-driven DevOps Engineer with a proven track record of optimizing software and deployment processes, Seeks a challenging position where I can utilize my skills and experience to contribute to the success of the organization. Before working, I got Master Degree from [Rutgers University](https://www.rutgers.edu/) and a Bachelor Degree from [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/). In my spare time, I am particularly interested in projects with high social impact and I'm a super fan of badminton and Chinese Go. If you think I can be helpful to you or your cause and would like to meet, please feel free to get in touch.
+I'm a motivated software engineer with a proven track record of optimizing software and deployment processes. Actively seeking a challenging position where I can utilize my skills and experience to contribute to the success of the organization. Before working, I got Master Degree from [Rutgers University](https://www.rutgers.edu/) and a Bachelor Degree from [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/). In my spare time, I am particularly interested in projects with high social impact and I'm a super fan of badminton and Chinese Go. If you think I can be helpful to you or your cause and would like to meet, please feel free to get in touch.
 
 <!-- # Some history
 
