@@ -70,10 +70,9 @@ const work = [
     I joined on day one and helped build a variety of tools to collect and analyze data. I also advised
     on technical strategy, helped hire engineers, and advised on their YC application.`,
     highlights: [
-      'Implemented ensemble method – Stacking and Blending, improved stability of the final model, ranked 8th out of 10000 teams',
+      'Implemented ensemble method – Stacking and Blending, improved stability of the final model, ranked 8th out of 10000 teams in the "Default User Risk Predictio" competition',
       'Trained a model for the O2O Coupon Forecasting Dataset ranked Top 10 in 15809 teams.',
       'Participate “Huawei Cup” National College Students Intelligent Design Competition and Earned 2nd Place Award',
-      'Honored 2nd Place in AI Global Challenge Default Probability Forecasting.'
     ],
   },
 
