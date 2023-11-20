@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.d564fd31.css",
-    "main.js": "/static/js/main.ba74203d.js",
+    "main.js": "/static/js/main.95a84ee8.js",
     "static/js/964.89018d91.chunk.js": "/static/js/964.89018d91.chunk.js",
     "static/js/117.32b3d222.chunk.js": "/static/js/117.32b3d222.chunk.js",
     "static/js/478.30e4c10f.chunk.js": "/static/js/478.30e4c10f.chunk.js",
     "static/js/922.950c5cf1.chunk.js": "/static/js/922.950c5cf1.chunk.js",
     "static/js/161.1e5c53e3.chunk.js": "/static/js/161.1e5c53e3.chunk.js",
-    "static/js/18.fd6da6a3.chunk.js": "/static/js/18.fd6da6a3.chunk.js",
+    "static/js/18.955f2bec.chunk.js": "/static/js/18.955f2bec.chunk.js",
     "static/js/191.6d90454e.chunk.js": "/static/js/191.6d90454e.chunk.js",
     "static/js/209.04592873.chunk.js": "/static/js/209.04592873.chunk.js",
     "static/js/625.98f141cd.chunk.js": "/static/js/625.98f141cd.chunk.js",
@@ -15,19 +15,19 @@
     "static/media/about.md": "/static/media/about.e6242ecec4ccd4c540c1.md",
     "index.html": "/index.html",
     "main.d564fd31.css.map": "/static/css/main.d564fd31.css.map",
-    "main.ba74203d.js.map": "/static/js/main.ba74203d.js.map",
+    "main.95a84ee8.js.map": "/static/js/main.95a84ee8.js.map",
     "964.89018d91.chunk.js.map": "/static/js/964.89018d91.chunk.js.map",
     "117.32b3d222.chunk.js.map": "/static/js/117.32b3d222.chunk.js.map",
     "478.30e4c10f.chunk.js.map": "/static/js/478.30e4c10f.chunk.js.map",
     "922.950c5cf1.chunk.js.map": "/static/js/922.950c5cf1.chunk.js.map",
     "161.1e5c53e3.chunk.js.map": "/static/js/161.1e5c53e3.chunk.js.map",
-    "18.fd6da6a3.chunk.js.map": "/static/js/18.fd6da6a3.chunk.js.map",
+    "18.955f2bec.chunk.js.map": "/static/js/18.955f2bec.chunk.js.map",
     "191.6d90454e.chunk.js.map": "/static/js/191.6d90454e.chunk.js.map",
     "209.04592873.chunk.js.map": "/static/js/209.04592873.chunk.js.map",
     "745.214e2a63.chunk.js.map": "/static/js/745.214e2a63.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d564fd31.css",
-    "static/js/main.ba74203d.js"
+    "static/js/main.95a84ee8.js"
   ]
 }
