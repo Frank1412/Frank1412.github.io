@@ -13,10 +13,19 @@
  */
 const work = [
   {
+    name: "Syracuse University, EECS department, FSSL(Full Stack Security Lab)",
+    position: "Research Assistant",
+    startDate: "2024-08",
+    summary: `
+      
+    `
+  },
+  {
     name: 'Black Cow Tech',
     position: 'Software Engineer',
     url: 'https://smileidentity.com',
     startDate: '2023-08-10',
+    endDate: '2024-03',
     summary: `
     Black Cow Tech is a groundbreaking company dedicated to democratizing cloud computing for everyone.
     With an intuitive user interface, streamlined deployment, scalability, cost optimization features,

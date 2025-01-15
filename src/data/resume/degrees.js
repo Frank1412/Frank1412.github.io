@@ -1,5 +1,11 @@
 const degrees = [
   {
+    school: 'Syracuse University',
+    degree: 'Ph.D. Computer Science',
+    link: 'https://https://www.syracuse.edu/',
+    year: 2029,
+  },
+  {
     school: 'Rutgers University',
     degree: 'M.S. Computer Science',
     link: 'https://rutgers.edu',
