@@ -16,19 +16,22 @@ const work = [
     name: "Syracuse University, EECS department, SYNE lab and Jones Lab",
     position: "Research Assistant",
     startDate: "2025-05",
-    summary: `
-      software hardware co-design for AI/ML applications on FPGAs.
-      security and privacy research on software and hardware systems.
-    `
+    summary: ``,
+    highlights: [
+      'Developed a novel hardware architecture for efficient and secure AI/ML applications on FPGAs, focusing on software-hardware co-design. Combining Count2Multiply and CHARM to accelerate the GeMM in NN inference and Training.',
+      'Conducted research on security and privacy in software and hardware systems, contributing to advancements in secure computing. Explore the side-channel attacks and defenses in hardware systems: the security issue of using in-memory computing to implement AES algorithm.',
+    ]
   },
   {
     name: "Syracuse University, EECS department, FSSL(Full Stack Security Lab)",
     position: "Research Assistant",
     startDate: "2024-08",
     endDate: "2025-04",
-    summary: `
-      Blockchain(Inscription) security research and LLM security research.
-    `
+    summary: ``,
+    highlights: [
+      'Conducted research on blockchain security, focusing on the security of Bitcoin inscriptions.',
+      'Explored the method of detecting and mitigating vulnerabilities in LLMs',
+    ],
   },
   {
     name: 'Black Cow Tech',
@@ -56,8 +59,7 @@ const work = [
     // url: 'http://skepticalinvestments.biz',
     startDate: '2020-08-30',
     endDate: '2021-05-31',
-    summary: `Skeptical Investments is a micro-vc fund focused on Angel, Seed, and Series-A
-    YC companies.`,
+    summary: ``,
     highlights: [
       'Utilized EAST (Python, Pytorch) algorithm to detect stuff in an image. Built a pipeline for Resume Content Extraction and used Nginx for load balancing, processing a large number of requests up to 30,000 simultaneously',
       'Developed a Sentimental Analysis System based on Hadoop(Java, HDFS) and Spark(PySpark) platform that enables real-time big data processing that is highly available, scalable and extensible.',
@@ -69,11 +71,7 @@ const work = [
     // url: 'https://arthena.com',
     startDate: '2020-04-10',
     endDate: '2020-08-15',
-    summary: `Arthena is a Series A Company funded by <a href="https://www.anthemis.com/">Athemis</a>,
-    <a href="https://foundationcapital.com">Foundation Capital</a>, and <a href="https://ycombinator.com/">YC</a>.
-    We develop quantitative strategies to predict the value of fine art and build investment products.
-    I ran a 20-person product and engineering org for 8 years. We were acquired by
-    <a href="https://www.masterworks.com/">Masterworks</a> in 2023.`,
+    summary: ``,
     highlights: [
       'Utilized Redis for caching frequently accessed data to enhance the performance(QPS) of the system and RabbitMQ as the message broker to ensure reliable delivery. Worked on both backend and frontend development, including database design, RESTful API development, and UI design using Vue.js.',
       'Developed and maintained web applications using SpringBoot and MyBatis frameworks. Integrated Redis into the Second Kill Module for caching large volume order requests to prevent overselling and maintain consistency',  
@@ -85,9 +83,7 @@ const work = [
     // url: 'http://enveritas.org',
     startDate: '2017-07-01',
     endDate: '2019-06-30',
-    summary: `Enveritas is a non-profit that works with coffee farmers to improve their livelihoods.
-    I joined on day one and helped build a variety of tools to collect and analyze data. I also advised
-    on technical strategy, helped hire engineers, and advised on their YC application.`,
+    summary: ``,
     highlights: [
       'Implemented ensemble method – Stacking and Blending, improved stability of the final model, ranked 8th out of 10000 teams in the "Default User Risk Predictio" competition',
       'Trained a model for the O2O Coupon Forecasting Dataset ranked Top 10 in 15809 teams.',
