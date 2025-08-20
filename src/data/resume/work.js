@@ -13,9 +13,19 @@
  */
 const work = [
   {
+    name: "Syracuse University, EECS department, SYNE lab and Jones Lab",
+    position: "Research Assistant",
+    startDate: "2025-05",
+    endDate: "Present",
+    summary: `
+      
+    `
+  },
+  {
     name: "Syracuse University, EECS department, FSSL(Full Stack Security Lab)",
     position: "Research Assistant",
     startDate: "2024-08",
+    endDate: "2025-04",
     summary: `
       
     `
