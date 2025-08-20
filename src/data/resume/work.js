@@ -16,9 +16,9 @@ const work = [
     name: "Syracuse University, EECS department, SYNE lab and Jones Lab",
     position: "Research Assistant",
     startDate: "2025-05",
-    endDate: "Present",
     summary: `
-      
+      software hardware co-design for AI/ML applications on FPGAs.
+      security and privacy research on software and hardware systems.
     `
   },
   {
@@ -27,7 +27,7 @@ const work = [
     startDate: "2024-08",
     endDate: "2025-04",
     summary: `
-      
+      Blockchain(Inscription) security research and LLM security research.
     `
   },
   {
