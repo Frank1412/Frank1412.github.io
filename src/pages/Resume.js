@@ -26,7 +26,7 @@ const sections = {
 const Resume = () => (
   <Main
     title="Resume"
-    description="Shouzhi Fang's Resume. Smile Identity, Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet, and Facebook."
+    description="Shouzhi Fang's Resume. Ph.D. in Computer Science, Syracuse University. advised by Professor Endadul Hoque and Professor Alex K. Jones. His interests are security in software and hardware."
   >
     <article className="post" id="resume">
       <header>
