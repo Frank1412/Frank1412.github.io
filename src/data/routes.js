@@ -12,14 +12,14 @@ const routes = [
     label: 'Resume',
     path: '/resume',
   },
-  // {
-  //   label: 'Projects',
-  //   path: '/projects',
-  // },
   {
-    label: 'Publications',
-    path: '/publications',
+    label: 'Projects',
+    path: '/projects',
   },
+  // {
+  //   label: 'Publications',
+  //   path: '/publications',
+  // },
   // {
   //   label: 'Stats',
   //   path: '/stats',

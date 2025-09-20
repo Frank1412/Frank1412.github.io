@@ -23,7 +23,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/projects" element={<Projects />} /> */}
+        <Route path="/projects" element={<Projects />} />
         <Route path="/publications" element={<Publications />} />
         {/* The following routes are lazy loaded */}
         <Route path="/stats" element={<Stats />} />
