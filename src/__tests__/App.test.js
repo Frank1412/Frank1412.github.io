@@ -5,7 +5,7 @@
 import '@testing-library/jest-dom';
 import '@testing-library/react';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import App from '../App';
 
@@ -26,7 +26,7 @@ describe('renders the app', () => {
     container = document.createElement('div');
     document.body.appendChild(container);
     await act(async () => {
-      await ReactDOM.createRoot(container).render(<App />);
+      ReactDOM.render(<App />, container);
     });
   });
 

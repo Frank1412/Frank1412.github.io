@@ -5,27 +5,41 @@ import initialData from '../../data/stats/site';
 
 const Stats = () => {
   const [data, setResponseData] = useState(initialData);
+  const [isClient, setIsClient] = useState(false);
+  
   // TODO think about persisting this somewhere
   const fetchData = useCallback(async () => {
-    // request must be authenticated if private
-    const res = await fetch(
-      'https://api.github.com/repos/mldangelo/personal-site',
-    );
-    const resData = await res.json();
-    setResponseData(
-      initialData.map((field) => ({
-        ...field,
-        // update value if value was returned by call to github
-        value: Object.keys(resData).includes(field.key)
-          ? resData[field.key]
-          : field.value,
-      })),
-    );
+    if (!isClient) return; // Don't fetch during SSR
+    
+    try {
+      // request must be authenticated if private
+      const res = await fetch(
+        'https://api.github.com/repos/mldangelo/personal-site',
+      );
+      const resData = await res.json();
+      setResponseData(
+        initialData.map((field) => ({
+          ...field,
+          // update value if value was returned by call to github
+          value: Object.keys(resData).includes(field.key)
+            ? resData[field.key]
+            : field.value,
+        })),
+      );
+    } catch (error) {
+      console.error('Failed to fetch GitHub stats:', error);
+    }
+  }, [isClient]);
+
+  useEffect(() => {
+    setIsClient(true);
   }, []);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    if (isClient) {
+      fetchData();
+    }
+  }, [fetchData, isClient]);
 
   return (
     <div>

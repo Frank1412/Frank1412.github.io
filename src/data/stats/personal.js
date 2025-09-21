@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const Age = () => {
-  const [age, setAge] = useState();
+  const [age, setAge] = useState(null);
+  const [isClient, setIsClient] = useState(false);
 
   const tick = () => {
     const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
@@ -10,11 +11,20 @@ const Age = () => {
   };
 
   useEffect(() => {
+    // Set client flag to true after component mounts
+    setIsClient(true);
+    tick(); // Calculate initial age
     const timer = setInterval(() => tick(), 25);
     return () => {
       clearInterval(timer);
     };
   }, []);
+
+  // Return consistent content during SSR
+  if (!isClient) {
+    return <>Loading...</>;
+  }
+
   return <>{age}</>;
 };
 

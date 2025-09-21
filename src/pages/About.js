@@ -6,15 +6,17 @@ import Main from '../layouts/Main';
 
 const About = () => {
   const [markdown, setMarkdown] = useState('');
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     import('../data/about.md')
       .then((res) => {
         fetch(res.default)
           .then((r) => r.text())
           .then(setMarkdown);
       });
-  });
+  }, []);
 
   const count = markdown.split(/\s+/)
     .map((s) => s.replace(/\W/g, ''))
