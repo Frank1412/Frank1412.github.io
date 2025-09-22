@@ -10,7 +10,14 @@ Welcome to my [personal website](https://frank1412.github.io)! This is Shouzhi F
 
 ## deploy online
 ```bash
+    npm run predeploy
     npm run deploy
+```
+
+## pure deploy command
+```bash
+    npm run build
+    gh-pages -d build
 ```
 
 ## 🙌 Acknowledgements
