@@ -9,7 +9,6 @@
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
-    "postbuild": "react-snap",
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
