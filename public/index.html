@@ -32,16 +32,16 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900" rel="stylesheet" async>
 
     <script type="text/javascript">
-      // GitHub Pages SPA redirect handling
-      // This handles redirects from 404.html back to the main app
+      // GitHub Pages SPA redirect handling - restores clean URLs
       (function(l) {
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
           }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
+          // Replace the URL with clean path, removing the encoded parameter
+          var cleanPath = '/' + decoded.split('?')[0];
+          var queryString = decoded.includes('?') ? '?' + decoded.split('?').slice(1).join('?') : '';
+          window.history.replaceState(null, null, cleanPath + queryString + l.hash);
         }
       }(window.location))
     </script>
