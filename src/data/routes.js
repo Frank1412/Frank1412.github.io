@@ -5,14 +5,17 @@ const routes = [
     path: '/',
   },
   {
+    index: true,
     label: 'About',
     path: '/about',
   },
   {
+    index: true,
     label: 'Resume',
     path: '/resume',
   },
   {
+    index: true,
     label: 'Projects',
     path: '/projects',
   },
