@@ -32,15 +32,14 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900" rel="stylesheet" async>
 
     <script type="text/javascript">
-      // GitHub Pages SPA redirect - preserves clean URLs
-      // Store the path and redirect to index.html with a special parameter
+      // GitHub Pages SPA redirect - completely clean URLs
+      // Store the intended path in sessionStorage and redirect to root
       (function(l) {
-        if (l.pathname.length > 0) {
-          var redirect = l.pathname;
-          // Redirect to root with path encoded as search parameter
-          var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + 
-                      '/?/' + redirect.slice(1) + (l.search ? '&' + l.search.slice(1) : '') + l.hash;
-          window.location.replace(newUrl);
+        if (l.pathname.length > 1) {
+          // Store the path we want to navigate to
+          sessionStorage.setItem('redirectPath', l.pathname + l.search + l.hash);
+          // Redirect to root (clean URL)
+          window.location.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/');
         }
       }(window.location))
     </script>
