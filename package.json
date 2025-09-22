@@ -9,6 +9,7 @@
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
+    "postbuild": "react-snap",
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -49,6 +50,23 @@
     "rimraf": "^5.0.5",
     "sass": "^1.69.5",
     "source-map-explorer": "^2.5.3"
+  },
+  "reactSnap": {
+    "inlineCss": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "skipThirdPartyRequests": true,
+    "include": [
+      "/",
+      "/about",
+      "/projects",
+      "/resume",
+      "/publications",
+      "/stats",
+      "/contact"
+    ]
   },
   "browserslist": {
     "production": [
