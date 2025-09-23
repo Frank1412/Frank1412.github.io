@@ -9,7 +9,6 @@
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
     "build": "rimraf ./build && react-scripts build",
-    "postbuild": "react-snap",
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -62,36 +61,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "reactSnap": {
-    "include": [
-      "/",
-      "/about",
-      "/resume", 
-      "/projects",
-      "/publications",
-      "/stats",
-      "/contact"
-    ],
-    "skipThirdPartyRequests": false,
-    "cacheAjaxRequests": false,
-    "puppeteerArgs": [
-      "--no-sandbox", 
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-      "--disable-extensions",
-      "--disable-gpu",
-      "--no-first-run",
-      "--disable-default-apps",
-      "--disable-web-security",
-      "--allow-running-insecure-content"
-    ],
-    "crawl": false,
-    "waitFor": 2000,
-    "fixWebpackChunksIssue": "CRA2",
-    "removeBlobs": true,
-    "sourceMaps": false,
-    "asyncScriptTags": true,
-    "preloadImages": true
   }
 }
