@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/images/myFavicon/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Page not found" />
-    <title>404 - Page Not Found</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="%PUBLIC_URL%/images/favicon/manifest.json"> -->
     
-    <!-- GitHub Pages SPA redirect -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/images/myFavicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/images/myFavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/images/myFavicon/favicon-16x16.png">
+    <link rel="manifest" href="%PUBLIC_URL%/images/myFavicon/site.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="%PUBLIC_URL%/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Raleway:wght@400;800;900&display=swap" rel="stylesheet">
+
     <script type="text/javascript">
-      // GitHub Pages SPA redirect - preserves clean URLs
-      // Store the path and redirect to index.html with a special parameter
+      // GitHub Pages SPA redirect - completely clean URLs
+      // Store the intended path in sessionStorage and redirect to root
       (function(l) {
-        if (l.pathname.length > 0) {
-          var redirect = l.pathname;
-          // Redirect to root with path encoded as search parameter
-          var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + 
-                      '/?/' + redirect.slice(1) + (l.search ? '&' + l.search.slice(1) : '') + l.hash;
-          window.location.replace(newUrl);
+        if (l.pathname.length > 1) {
+          // Store the path we want to navigate to
+          sessionStorage.setItem('redirectPath', l.pathname + l.search + l.hash);
+          // Redirect to root (clean URL)
+          window.location.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/');
         }
       }(window.location))
     </script>
 </head>
+
 <body>
+    <div id="root"></div>
 </body>
+
 </html>
