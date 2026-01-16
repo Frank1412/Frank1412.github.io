@@ -35,10 +35,15 @@ const data = [
     icon: faTwitter,
   },
   {
-    link: 'mailto:frank.kid1412@gmail.com',
+    link: 'mailto:sfang18@syr.edu',
     label: 'Email',
     icon: faEnvelope,
   },
+  // {
+  //   link: 'mailto:frank.kid1412@gmail.com',
+  //   label: 'Email',
+  //   icon: faEnvelope,
+  // },
 ];
 
 export default data;
