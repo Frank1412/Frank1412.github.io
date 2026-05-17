@@ -6,7 +6,7 @@ const data = [
     image: '/images/projects/aes-pim.png',
     date: '2026-5-1',
     desc:
-      'Memory Encryption is a novel hardware architecture for secure computation in modern multi-tenant system, focusing on software-hardware co-design. Combining AES, a symmetric encryption algorithm, and PIM architecture, we shift the CPU-based Trusted Computing Base (TCB) to the memory system itself, enhancing security and efficiency.'
+      'Memory Encryption is a novel hardware architecture for secure computation in modern multi-tenant system, focusing on software-hardware co-design. Combining AES, a symmetric encryption algorithm, and PIM architecture, we shift the Trusted Computing Base (TCB) from the CPU to the memory system itself, enhancing the security and efficiency of the system.'
   },
   // {
   //   title: 'Harvest',
