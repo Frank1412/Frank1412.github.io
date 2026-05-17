@@ -1,16 +1,13 @@
 // TODO Add a couple lines about each project
 const data = [
-  // {
-  //   title: 'Nearest Dollar',
-  //   subtitle: '2015 BVP Hackathon',
-  //   image: '/images/projects/nearestdollar.jpg',
-  //   date: '2015-11-20',
-  //   desc:
-  //     'Built for a social impact hackathon. '
-  //     + 'NearestDollar connected to your bank accounts, credit cards, '
-  //     + 'or debit cards and rounded up your purchases to donate the balance to '
-  //     + 'the charity of your choice.',
-  // },
+  {
+    title: 'AES-PIM architecture for secure computation',
+    subtitle: 'Processing in Memory',
+    image: '/images/projects/aes-pim.png',
+    date: '2026-5-1',
+    desc:
+      'Memory Encryption is a novel hardware architecture for secure computation in modern multi-tenant system, focusing on software-hardware co-design. Combining AES, a symmetric encryption algorithm, and PIM architecture, we shift the CPU-based Trusted Computing Base (TCB) to the memory system itself, enhancing security and efficiency.'
+  },
   // {
   //   title: 'Harvest',
   //   subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',

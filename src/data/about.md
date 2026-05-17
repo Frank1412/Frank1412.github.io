@@ -5,22 +5,24 @@ I'm a motivated Software and Hardware Security researcher(Syracuse University) w
 
 <!-- Actively seeking a challenging position where I can utilize my skills and experience to contribute to the success of the organization. Before working, I got Master Degree from [Rutgers University](https://www.rutgers.edu/) and a Bachelor Degree from [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/). In my spare time, I am particularly interested in projects with high social impact and I'm a super fan of badminton and Chinese Go. If you think I can be helpful to you or your cause and would like to meet, please feel free to get in touch. -->
 
+
+
 <!-- # Some history
 
 - My parents take me into intelligent games when I was 5 in the kindergarten. It is Chinese Weiqi. After that, I fell in love with 'Go' throughout my K-12 hours and got 5-degree in professional in Chinese Weiqi Associate. It paves a way for my future computer career. To this day, I still keep playing Go on a break. -->
 
 
-<!-- # I like
+# I like
 - Badminton
 - Mountain Hiking
 - Running
 - Go
-- Cooking -->
+- Cooking
 
 
 # Travel / Geography
 
-- I am from originally from Zhengzhou, in China. I have since lived in Hefei, Nanjing, Chongqing, and New Jersey.
+- I was born in Zhengzhou, in China. I have since lived in Hefei, Nanjing, Chongqing, New Jersey and Syracuse.
 - From 2015 to 2019, I enjoyed Bachelor Degree in CQUPT(Chongqing University of Posts and Telecommunications).
 - From 2021 to 2023, I studied in Rutgers University, major in Computer Science.
 - From 2024 - until now, I pursue CS Ph.D in Syracuse University. 
