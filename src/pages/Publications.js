@@ -42,8 +42,16 @@ const Publications = () => {
         <header>
           <div className="title">
             <h2><Link to="/publications">Publications</Link></h2>
+            <p className="page-subtitle">Conference papers, journals, posters, and preprints</p>
           </div>
         </header>
+        <p className="page-lead">
+          A selection of my research publications. Author name
+          {' '}
+          <span className="pub-author-self">Shouzhi Fang</span>
+          {' '}
+          is underlined.
+        </p>
 
         <div className="publications-list">
           {grouped.map(({ category, items }) => (

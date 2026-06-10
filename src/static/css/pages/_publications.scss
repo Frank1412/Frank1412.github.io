@@ -1,16 +1,29 @@
 #publications {
+  .pub-author-self {
+    text-decoration: underline;
+  }
+
   .publications-list {
-    padding: 0 1em;
+    padding: 0 0.25em;
   }
 
   .publications-section {
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .publications-category {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.3em;
-    margin-bottom: 1em;
+    font-size: 0.75em;
+    font-weight: _font(weight-heading-bold);
+    letter-spacing: _font(kerning-heading);
+    text-transform: uppercase;
+    color: _palette(fg-light);
+    border-bottom: solid 1px _palette(border);
+    padding-bottom: 0.5em;
+    margin-bottom: 1.25em;
   }
 
   .publications-items {
@@ -20,13 +33,13 @@
 
     .publication-entry {
       position: relative;
-      padding: 0.8em 0 0.8em 2em;
-      border-left: 3px solid #e8e8e8;
-      margin-bottom: 0.5em;
-      transition: border-color 0.2s;
+      padding: 1em 0 1em 2.25em;
+      border-left: solid 3px _palette(border);
+      margin-bottom: 0.75em;
+      transition: border-color #{_duration(transition)} ease;
 
       &:hover {
-        border-left-color: #888;
+        border-left-color: _palette(accent);
       }
 
       &::before {
@@ -34,21 +47,27 @@
         content: counter(pub-counter) ".";
         position: absolute;
         left: 0.5em;
-        font-weight: bold;
-        color: #888;
+        top: 1.05em;
+        font-weight: _font(weight-heading-bold);
+        font-size: 0.85em;
+        color: _palette(fg-light);
       }
 
       .pub-title {
         display: block;
-        font-weight: 600;
-        font-size: 1.05em;
-        margin-bottom: 0.2em;
+        font-weight: 700;
+        font-size: 1.02em;
+        line-height: 1.45;
+        margin-bottom: 0.3em;
+        color: _palette(fg-bold);
 
         a {
           text-decoration: none;
-          border-bottom: 1px dashed #aaa;
+          color: inherit;
+          border-bottom: 1px dashed _palette(border-alt);
 
           &:hover {
+            color: _palette(accent);
             border-bottom-style: solid;
           }
         }
@@ -57,27 +76,31 @@
       .pub-authors {
         display: block;
         font-size: 0.9em;
-        color: #555;
-        margin-bottom: 0.15em;
+        color: _palette(fg);
+        margin-bottom: 0.2em;
+        line-height: 1.55;
 
         .pub-author-self {
           text-decoration: underline;
+          color: _palette(fg-bold);
         }
       }
 
       .pub-venue {
         display: block;
-        font-size: 0.9em;
-        color: #666;
+        font-size: 0.88em;
+        color: _palette(fg);
+        line-height: 1.5;
       }
 
       .pub-link {
         display: inline-block;
-        margin-top: 0.3em;
-        font-size: 0.85em;
-        font-weight: 600;
+        margin-top: 0.4em;
+        font-size: 0.82em;
+        font-weight: _font(weight-heading-bold);
+        letter-spacing: 0.05em;
         text-decoration: none;
-        color: #2980b9;
+        color: _palette(accent);
 
         &:hover {
           text-decoration: underline;

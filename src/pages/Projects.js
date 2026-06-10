@@ -15,9 +15,12 @@ const Projects = () => (
       <header>
         <div className="title">
           <h2><Link to="/projects">Projects</Link></h2>
-          {/* <p>A selection of projects that I&apos;m not too ashamed of</p> */}
+          <p className="page-subtitle">Research and engineering work in security and systems</p>
         </div>
       </header>
+      <p className="page-lead">
+        Selected projects exploring hardware-software co-design for secure computation.
+      </p>
       <div className="projects-grid">
         {data.map((project) => (
           <Cell

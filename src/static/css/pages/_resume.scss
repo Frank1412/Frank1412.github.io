@@ -2,72 +2,178 @@
 
 #resume {
 
+	.resume-pdf-toolbar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+		margin-bottom: 1.25em;
+		padding: 0 0.25em;
+	}
+
+	.resume-pdf-viewer {
+		padding: 0 0.25em;
+	}
+
+	.resume-pdf-frame {
+		display: block;
+		width: 100%;
+		height: calc(100vh - 14em);
+		min-height: 32em;
+		border: solid 1px _palette(border);
+		border-radius: 4px;
+		background: _palette(bg-alt);
+	}
+
+	.resume-pdf-fallback {
+		margin: 0.75em 0 0;
+		font-size: 0.9em;
+		color: _palette(fg);
+
+		a {
+			color: _palette(accent);
+			border-bottom: 0;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		.resume-pdf-frame {
+			height: calc(100vh - 12em);
+			min-height: 24em;
+		}
+	}
+
 	.link-to {
 		position: relative;
 		top: -4.5em;
 	}
 
-	.link-container h4 {
-		text-decoration:none;
-		border-bottom: none;
-		display: inline-flex;
+	.link-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em;
+		margin-top: 1em;
+		justify-content: flex-start;
 
-		a {
-				padding: 0 .5em;
+		h4 {
+			text-decoration: none;
+			border-bottom: none;
+			display: inline-flex;
+			margin: 0;
+
+			a {
+				display: inline-block;
+				padding: 0.35em 0.85em;
 				margin: 0;
+				font-family: _font(family-heading);
+				font-size: 0.65em;
+				font-weight: _font(weight-heading-bold);
+				letter-spacing: _font(kerning-heading);
+				text-transform: uppercase;
+				color: _palette(fg);
+				background: _palette(bg-alt);
+				border: solid 1px _palette(border);
+				border-radius: 4px;
+				text-decoration: none;
+				transition: color #{_duration(transition)} ease,
+					border-color #{_duration(transition)} ease,
+					background #{_duration(transition)} ease;
+
+				&:hover {
+					color: _palette(accent);
+					border-color: _palette(accent);
+					background: _palette(bg);
+				}
+			}
 		}
 	}
 
-	.education {
+	.education,
+	.experience,
+	.courses,
+	.skills,
+	.references {
+		margin-bottom: 2.5em;
+		padding-top: 0.5em;
 
 		.title {
-			text-align: center;
-			margin-bottom: 2em;
+			text-align: left;
+			margin-bottom: 1.5em;
+			border-bottom: solid 1px _palette(border);
+			padding-bottom: 0.5em;
+
+			h3 {
+				font-size: 0.85em;
+				margin: 0;
+			}
 		}
 	}
+
 	.experience {
-		.title {
-			text-align: center;
-		}
-		.job {
-			margin: 1em;
-			p{
+		.jobs-container {
+			margin: 0 0 1.25em;
+			padding: 1em 1.25em;
+			background: _palette(bg-alt);
+			border: solid 1px _palette(border);
+			border-left: solid 3px _palette(accent);
+			border-radius: 0 6px 6px 0;
+
+			p {
 				margin: 0;
 			}
 		}
 	}
 
 	.jobs-container {
+		margin-bottom: 1em;
+
+		header h4 {
+			margin-bottom: 0.35em;
+
+			a {
+				color: _palette(accent);
+				border-bottom: 0;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
 		.points {
+			margin: 0.75em 0 0;
+			padding-left: 1.25em;
+
 			li {
-				margin: 0;
+				margin: 0 0 0.35em;
 				padding: 0;
-					font-size: .9em;
+				font-size: 0.9em;
+				line-height: 1.6;
+				color: _palette(fg-bold);
 			}
 		}
 	}
 
 	.courses {
-		padding-top: 1.6em;
-		.title {
-			text-align: center;
-		}
+		padding-top: 0;
+
 		.course-list {
-			text-align: center;
+			text-align: left;
 
 			h4 {
-				white-space: nowrap;
+				white-space: normal;
 			}
 		}
 	}
 
 	.skills {
-		margin-top: 2em;
-		.title {
-			text-align: center;
-			p {
-				font-size: 0.9em;
-			}
+		margin-top: 0;
+
+		.title p {
+			font-size: 0.9em;
 		}
 	}
 
@@ -77,64 +183,85 @@
 	}
 
 	.references {
-		margin: 2em 0;
-		.title {
-			text-align: center;
-		}
+		margin: 0;
 	}
 }
 
 .daterange {
-	margin-bottom: .2em;
+	margin-bottom: 0.35em;
+	font-size: 0.85em;
+	color: _palette(fg);
+	font-family: _font(family-heading);
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }
 
 .degree-container {
+	padding: 1em 1.25em;
+	margin-bottom: 1em;
+	background: _palette(bg-alt);
+	border: solid 1px _palette(border);
+	border-left: solid 3px _palette(accent);
+	border-radius: 0 6px 6px 0;
+
 	h4 {
 		font-weight: normal;
 	}
 
 	.degree {
-		margin-bottom: .1em;
+		margin-bottom: 0.15em;
 		text-transform: none;
-		letter-spacing: 0.16em;
-		font-size: .8em;
+		letter-spacing: 0.08em;
+		font-size: 0.85em;
+		color: _palette(fg-bold);
 	}
 
 	.school {
 		text-transform: none;
-		padding-top: 0.3em;
-		margin-bottom: 1em;
+		padding-top: 0;
+		margin-bottom: 0;
+		font-size: 0.95em;
+
+		a {
+			color: _palette(accent);
+			border-bottom: 0;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
 .courses .course-number {
 	display: inline;
 }
+
 .courses .course-name {
 	display: inline;
-	font-family: "Raleway", Helvetica, sans-serif;
+	font-family: _font(family-heading);
 	font-size: 0.7em;
-  font-weight: 400;
-  letter-spacing: 0.25em;
-  line-height: 2.5;
-  margin-top: -1em;
-  text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.25em;
+	line-height: 2.5;
+	margin-top: -1em;
+	text-transform: uppercase;
 }
 
-.courses ul li{
-  display: inline;
+.courses ul li {
+	display: inline;
 }
 
 .course-dot {
 	display: inline;
-	// display: none;
 }
 
 @include breakpoint(small) {
 	.course-dot {
 		display: none;
 	}
-	.course-container a{
+
+	.course-container a {
 		display: block;
 	}
 }

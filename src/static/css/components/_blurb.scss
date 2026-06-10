@@ -18,5 +18,12 @@
 
 		p {
 			font-size: 0.9em;
+			line-height: 1.65;
+			color: _palette(fg-bold);
+
+			strong {
+				color: _palette(accent);
+				font-weight: 700;
+			}
 		}
 	}

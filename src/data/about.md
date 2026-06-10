@@ -1,7 +1,10 @@
 
 # Intro
 
-I'm a motivated Software and Hardware Security researcher(Syracuse University) with a proven track record of optimizing security and deployment processes. Before Ph.D, I got Master of Science degree from [Rutgers University](https://www.rutgers.edu/) and a Bachelor of Engineering degree from [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/). In my spare time, I am particularly interested in projects with high social impact and I'm a super fan of badminton and Chinese Go. If you think I can be helpful to you or your cause and would like to meet, please feel free to get in touch.
+I am a **second-year Ph.D. student** in the [Department of Electrical Engineering and Computer Science](https://ecs.syracuse.edu/) at [Syracuse University](https://www.syracuse.edu/), co-advised by [Professor Alex K. Jones](https://www.alex-k-jones.org/) and [Professor Endadul Hoque](https://endadul.github.io/).
+<!--https://ecs.syracuse.edu/faculty-staff/alex-k-jones -->
+
+I'm a motivated **Software and Hardware Security** researcher with a proven track record of optimizing **security** and **deployment processes**. Before my Ph.D., I earned an **M.S.** from [Rutgers University](https://www.rutgers.edu/) and a **B.Eng.** from [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/). In my spare time, I am especially drawn to projects with **high social impact**, and I'm a devoted fan of **badminton** and **Chinese Go**. If you think I can be helpful to you or your cause and would like to meet, please feel free to [get in touch](/contact).
 
 <!-- Actively seeking a challenging position where I can utilize my skills and experience to contribute to the success of the organization. Before working, I got Master Degree from [Rutgers University](https://www.rutgers.edu/) and a Bachelor Degree from [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/). In my spare time, I am particularly interested in projects with high social impact and I'm a super fan of badminton and Chinese Go. If you think I can be helpful to you or your cause and would like to meet, please feel free to get in touch. -->
 
@@ -13,19 +16,20 @@ I'm a motivated Software and Hardware Security researcher(Syracuse University) w
 
 
 # I like
-- Badminton
-- Mountain Hiking
-- Running
-- Go
-- Cooking
+
+- **Badminton** — competitive and recreational play
+- **Mountain Hiking** — exploring trails and nature
+- **Running** — staying active outdoors
+- **Go (Weiqi)** — strategy and focus on the board
+- **Cooking** — experimenting with new recipes
 
 
 # Travel / Geography
 
-- I was born in Zhengzhou, in China. I have since lived in Hefei, Nanjing, Chongqing, New Jersey and Syracuse.
-- From 2015 to 2019, I enjoyed Bachelor Degree in CQUPT(Chongqing University of Posts and Telecommunications).
-- From 2021 to 2023, I studied in Rutgers University, major in Computer Science.
-- From 2024 - until now, I pursue CS Ph.D in Syracuse University. 
+- Born in **Zhengzhou, China**. I have since lived in **Hefei**, **Nanjing**, **Chongqing**, **New Jersey**, and **Syracuse**.
+- **2015–2019** — **B.Eng.** at [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/) (CQUPT)
+- **2021–2023** — **M.S. in Computer Science** at [Rutgers University](https://www.rutgers.edu/)
+- **2024–present** — **Ph.D. in Computer Science** at [Syracuse University](https://www.syracuse.edu/)
 
 <!-- # Fun facts
 

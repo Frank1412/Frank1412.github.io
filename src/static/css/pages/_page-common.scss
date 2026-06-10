@@ -1,0 +1,19 @@
+.page-subtitle {
+  font-family: _font(family);
+  font-size: 0.95em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: _palette(fg);
+  margin: 0.5em 0 0;
+  text-transform: none;
+}
+
+.page-lead {
+  font-size: 1em;
+  line-height: 1.75;
+  color: _palette(fg-bold);
+  margin: 0 0 1.75em;
+  padding: 0 0.25em;
+  max-width: 42em;
+}

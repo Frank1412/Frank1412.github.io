@@ -1,13 +1,67 @@
-// About page (/about)
+// Markdown content (About page and similar)
 
 .markdown {
 
   p {
-    margin: auto;
+    margin: 0 0 1.25em;
+    line-height: 1.75;
+    color: _palette(fg-bold);
   }
 
   h1 {
-    font-size: .8em;
-    margin-top: 3em;
+    font-size: 0.75em;
+    font-weight: _font(weight-heading-bold);
+    letter-spacing: _font(kerning-heading);
+    text-transform: uppercase;
+    color: _palette(fg-light);
+    border-bottom: solid 1px _palette(border);
+    padding-bottom: 0.5em;
+    margin: 2.5em 0 1.25em;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5em;
+
+    li {
+      position: relative;
+      padding: 0.65em 0 0.65em 1.5em;
+      line-height: 1.65;
+      color: _palette(fg-bold);
+      border-bottom: solid 1px _palette(border-bg);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 1.15em;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: _palette(accent);
+      }
+    }
+  }
+
+  strong {
+    color: _palette(fg-bold);
+    font-weight: 700;
+    background: linear-gradient(to top, rgba(255, 220, 120, 0.45) 35%, transparent 35%);
+    padding: 0 0.1em;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px dashed _palette(border-alt);
+    color: _palette(accent);
+
+    &:hover {
+      border-bottom-style: solid;
+    }
   }
 }

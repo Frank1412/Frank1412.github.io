@@ -20,7 +20,11 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Shouzhi, a Ph.D student of Syracuse University, Rutgers and CQUPT Alumni.
+      <p>
+        Ph.D. student at Syracuse University researching
+        {' '}
+        <strong>software &amp; hardware security</strong>
+        . Rutgers and CQUPT alumnus.
       </p>
       <ul className="actions">
         <li>

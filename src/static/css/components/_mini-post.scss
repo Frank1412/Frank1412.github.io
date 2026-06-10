@@ -74,14 +74,19 @@
     }
 
     .mini-post__subtitle {
-      font-family: _font(family);
-      font-size: 0.88em;
-      font-weight: _font(weight);
-      letter-spacing: 0.02em;
-      line-height: 1.45;
-      color: _palette(fg);
+      display: inline-block;
+      font-family: _font(family-heading);
+      font-size: 0.62em;
+      font-weight: _font(weight-heading-bold);
+      letter-spacing: _font(kerning-heading);
+      line-height: 1.4;
+      color: _palette(accent);
       margin: 0 0 0.65em 0;
-      text-transform: none;
+      padding: 0.25em 0.65em;
+      text-transform: uppercase;
+      background: rgba(46, 89, 186, 0.08);
+      border: solid 1px rgba(46, 89, 186, 0.2);
+      border-radius: 3px;
     }
 
     .published {

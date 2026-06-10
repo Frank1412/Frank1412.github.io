@@ -6,10 +6,8 @@ import Main from '../layouts/Main';
 
 const About = () => {
   const [markdown, setMarkdown] = useState('');
-  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
     import('../data/about.md')
       .then((res) => {
         fetch(res.default)
@@ -17,10 +15,6 @@ const About = () => {
           .then(setMarkdown);
       });
   }, []);
-
-  const count = markdown.split(/\s+/)
-    .map((s) => s.replace(/\W/g, ''))
-    .filter((s) => s.length).length;
 
   return (
     <Main
@@ -31,7 +25,7 @@ const About = () => {
         <header>
           <div className="title">
             <h2><Link to="/about">About Me</Link></h2>
-            {/* <p>(in about {count} words)</p> */}
+            <p className="page-subtitle">Researcher · Ph.D. student · Software and Hardware Security enthusiast</p>
           </div>
         </header>
         <Markdown>
