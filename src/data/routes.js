@@ -9,16 +9,16 @@ const routes = [
     path: '/about',
   },
   {
-    label: 'Resume',
-    path: '/resume',
-  },
-  {
     label: 'Projects',
     path: '/projects',
   },
   {
     label: 'Publications',
     path: '/publications',
+  },
+  {
+    label: 'Resume',
+    path: '/resume',
   },
   // {
   //   label: 'Stats',
