@@ -25,7 +25,7 @@ const About = () => {
         <header>
           <div className="title">
             <h2><Link to="/about">About Me</Link></h2>
-            <p className="page-subtitle">Researcher · Ph.D. student · Software and Hardware Security enthusiast</p>
+            <p className="page-subtitle">Researcher · Ph.D. candidate · Software and Hardware Security enthusiast</p>
           </div>
         </header>
         <Markdown>

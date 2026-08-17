@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 import data from '../data/publications';
 
-const categories = ['Conference', 'Journal', 'Poster', 'Preprint'];
+const categories = ['Conference', 'Preprint', 'Poster', 'Journal'];
 const SELF_NAME = 'Shouzhi Fang';
 
 const formatAuthors = (authors) => {

@@ -21,7 +21,7 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Ph.D. student at Syracuse University researching
+        Ph.D. candidate at Syracuse University researching
         {' '}
         <strong>software &amp; hardware security</strong>
         . Rutgers and CQUPT alumnus.

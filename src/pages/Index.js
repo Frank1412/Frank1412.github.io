@@ -36,7 +36,7 @@ const Index = () => (
         <div className="title">
           <h2><Link to="/">Welcome 欢迎</Link></h2>
           <p className="page-subtitle">
-            Ph.D. student · Software &amp; Hardware Security · Syracuse University
+            Ph.D. candidate · Software &amp; Hardware Security · Syracuse University
           </p>
         </div>
       </header>

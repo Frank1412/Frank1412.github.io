@@ -9,7 +9,7 @@ const RESUME_PDF = `${PUBLIC_URL}/cv-llt.pdf`;
 const Resume = () => (
   <Main
     title="Resume"
-    description="Shouzhi Fang's CV. Ph.D. student in Computer Science at Syracuse University."
+    description="Shouzhi Fang's CV. Ph.D. candidate in Computer Science at Syracuse University."
   >
     <article className="post" id="resume">
       <header>
