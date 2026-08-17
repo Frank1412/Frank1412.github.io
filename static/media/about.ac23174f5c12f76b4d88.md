@@ -1,7 +1,7 @@
 
 # Intro
 
-I am a **second-year Ph.D. student** in the [Department of Electrical Engineering and Computer Science](https://ecs.syracuse.edu/) at [Syracuse University](https://www.syracuse.edu/), co-advised by [Professor Alex K. Jones](https://www.alex-k-jones.org/) and [Professor Endadul Hoque](https://endadul.github.io/).
+I am a **Ph.D. candidate** in the [Department of Electrical Engineering and Computer Science](https://ecs.syracuse.edu/) at [Syracuse University](https://www.syracuse.edu/), co-advised by [Professor Alex K. Jones](https://www.alex-k-jones.org/) and [Professor Endadul Hoque](https://endadul.github.io/).
 <!--https://ecs.syracuse.edu/faculty-staff/alex-k-jones -->
 
 I'm a motivated **Software and Hardware Security** researcher with a proven track record of optimizing **security** and **deployment processes**. Before my Ph.D., I earned an **M.S.** from [Rutgers University](https://www.rutgers.edu/) and a **B.Eng.** from [Chongqing University of Posts and Telecommunications](https://www.cqupt.edu.cn/). In my spare time, I am especially drawn to projects with **high social impact**, and I'm a devoted fan of **badminton** and **Chinese Go**. If you think I can be helpful to you or your cause and would like to meet, please feel free to [get in touch](/contact).
