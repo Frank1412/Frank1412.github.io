@@ -11,6 +11,16 @@ const data = [
   },
   {
     category: 'Preprint',
+    title: 'RAPID: Row-Parallel Arithmetic Processing in DRAM',
+    authors: 'William C. Tegge, João Paulo Cardoso de Lima, Shouzhi Fang, Jeronimo Castrillon, Alex K. Jones',
+    venue: 'arXiv preprint arXiv:2610.02502',
+    year: 2026,
+    link: 'https://arxiv.org/abs/2610.02502',
+    pdf: 'https://arxiv.org/pdf/2610.02502',
+    abstract: '',
+  },
+  {
+    category: 'Preprint',
     title: 'YAVIN: A Unified Architecture for Secure Edge Processing in Memory',
     authors: 'Shouzhi Fang, William C. Tegge, Md Omar Faruque, Peipei Zhou, Endadul Hoque, Alex K. Jones',
     venue: 'arXiv preprint arXiv:2608.13496 (cs.AR)',
