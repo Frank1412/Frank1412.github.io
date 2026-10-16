@@ -42,6 +42,21 @@ const Index = () => (
       </header>
 
       <div className="home-hero">
+        <aside className="home-status" aria-label="Job search status">
+          <span className="home-status__badge">
+            <span className="home-status__dot" aria-hidden="true" />
+            Open to opportunities
+          </span>
+          <p className="home-status__text">
+            I am looking for a <strong>Fall 2027 internship</strong> in hardware security,
+            memory-centric / processing-in-memory systems, or computer architecture.
+            {' '}
+            <Link to="/resume">View my resume</Link>
+            {' '}
+            or reach me at sfang18 at syr dot edu.
+          </p>
+        </aside>
+
         <p className="home-intro">
           Welcome to my website. I research security problems at the intersection of
           {' '}

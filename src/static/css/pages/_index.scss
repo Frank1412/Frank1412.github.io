@@ -1,14 +1,118 @@
 #index {
+  // Homepage-only: larger base type than the 12pt site default.
+  font-size: 1.15em;
+
+  &.post {
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  > header {
+    background: linear-gradient(135deg, rgba(46, 89, 186, 0.07) 0%, rgba(46, 89, 186, 0) 60%);
+  }
+
+  > header .title {
+    padding-top: 2em;
+    padding-bottom: 1.75em;
+
+    h2 {
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+
+      // Short accent rule under the heading.
+      &::after {
+        content: '';
+        display: block;
+        width: 2.5em;
+        height: 3px;
+        margin-top: 0.35em;
+        border-radius: 2px;
+        background: _palette(accent);
+      }
+    }
+
+    @include breakpoint(medium) {
+      padding: 0;
+
+      h2::after {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @include breakpoint(small) {
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  .page-subtitle {
+    font-size: 1em;
+  }
+
   .home-hero {
     padding: 0 0.25em;
   }
 
+  .home-status {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em 1.4em;
+    margin-bottom: 1.75em;
+    background: rgba(46, 89, 186, 0.06);
+    border: solid 1px rgba(46, 89, 186, 0.25);
+    border-left: solid 4px _palette(accent);
+    border-radius: 10px;
+
+    &__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6em;
+      font-family: _font(family-heading);
+      font-size: 0.75em;
+      font-weight: _font(weight-heading-bold);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: _palette(accent);
+    }
+
+    &__dot {
+      width: 0.65em;
+      height: 0.65em;
+      border-radius: 50%;
+      background: #22a06b;
+      box-shadow: 0 0 0 3px rgba(34, 160, 107, 0.2);
+    }
+
+    &__text {
+      margin: 0;
+      line-height: 1.6;
+      color: _palette(fg-bold);
+
+      strong {
+        color: _palette(accent);
+      }
+
+      a {
+        color: _palette(accent);
+        border-bottom-color: rgba(46, 89, 186, 0.4);
+      }
+    }
+  }
+
   .home-intro {
     font-size: 1.05em;
-    line-height: 1.8;
+    line-height: 1.7;
     color: _palette(fg-bold);
-    margin-bottom: 2em;
-    max-width: 42em;
+    margin-bottom: 1.75em;
 
     strong {
       color: _palette(accent);
@@ -20,6 +124,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+    margin-bottom: 1.25em;
 
     @include breakpoint(small) {
       grid-template-columns: 1fr;
@@ -27,36 +132,72 @@
   }
 
   .home-nav-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.35em;
-    padding: 1.25em 1.5em;
-    background: _palette(bg-alt);
+    gap: 0.3em;
+    padding: 1.15em 3em 1.15em 1.4em;
+    background: _palette(bg);
     border: solid 1px _palette(border);
-    border-radius: 8px;
+    border-radius: 10px;
+    overflow: hidden;
     text-decoration: none;
-    border-bottom: solid 1px _palette(border);
     transition: border-color #{_duration(transition)} ease,
       box-shadow #{_duration(transition)} ease,
       transform #{_duration(transition)} ease;
 
+    // Accent bar on the left edge, revealed on hover.
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 4px;
+      background: _palette(accent);
+      transform: scaleY(0);
+      transition: transform #{_duration(transition)} ease;
+    }
+
+    // Arrow hint on the right.
+    &::after {
+      content: '→';
+      position: absolute;
+      right: 1.2em;
+      top: 50%;
+      font-size: 1.2em;
+      color: _palette(fg-light);
+      transform: translateY(-50%);
+      transition: color #{_duration(transition)} ease,
+        transform #{_duration(transition)} ease;
+    }
+
     &:hover {
-      border-color: _palette(accent);
-      box-shadow: 0 4px 16px rgba(46, 89, 186, 0.12);
+      border-color: rgba(46, 89, 186, 0.45);
+      box-shadow: 0 6px 20px rgba(46, 89, 186, 0.12);
       transform: translateY(-2px);
+
+      &::before {
+        transform: scaleY(1);
+      }
+
+      &::after {
+        color: _palette(accent);
+        transform: translate(4px, -50%);
+      }
     }
 
     &__label {
       font-family: _font(family-heading);
       font-size: 0.85em;
       font-weight: _font(weight-heading-bold);
-      letter-spacing: _font(kerning-heading);
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: _palette(fg-bold);
     }
 
     &__desc {
-      font-size: 0.9em;
+      font-size: 0.95em;
       line-height: 1.5;
       color: _palette(fg);
     }
