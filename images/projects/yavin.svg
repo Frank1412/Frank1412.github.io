@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" width="1536" height="1024">
+  <defs>
+    <style>
+      .font { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .title-main { font-size: 34px; font-weight: 700; fill: #ffffff; }
+      .subtitle { font-size: 26px; font-style: italic; font-weight: 500; fill: #091b56; }
+      .tee-title { font-size: 22px; font-weight: 700; fill: #091b56; }
+      .tee-item { font-size: 17px; font-weight: 500; fill: #091b56; }
+      .label-sm { font-size: 14px; font-weight: 600; fill: #091b56; }
+      .bus-title { font-size: 20px; font-weight: 700; fill: #d9580a; }
+      .secret-text { font-size: 15px; font-weight: 600; fill: #6d4fac; }
+      .card-header { font-size: 15px; font-weight: 700; fill: #ffffff; }
+      .card-body { font-size: 14px; font-weight: 400; fill: #1a1a1a; }
+    </style>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#091b56"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#6d4fac"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1536" height="1024" fill="#ffffff"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1536" height="108" fill="#001146"/>
+  <text class="font title-main" x="768" y="68" text-anchor="middle">YAVIN: Unified Architecture for Secure Edge Processing in Memory</text>
+
+  <text class="font subtitle" x="768" y="158" text-anchor="middle">Processing-in-Memory Trusted Computing Base</text>
+
+  <!-- Shared secret -->
+  <rect x="548" y="178" width="440" height="46" rx="10" fill="#efeffd" stroke="#6d4fac" stroke-width="2.5"/>
+  <g transform="translate(568, 188)" fill="#6d4fac">
+    <circle cx="12" cy="14" r="7" fill="none" stroke="#6d4fac" stroke-width="2"/>
+    <rect x="17" y="12" width="14" height="4" rx="1" fill="#6d4fac"/>
+    <rect x="28" y="8" width="4" height="8" rx="1" fill="#6d4fac"/>
+  </g>
+  <text class="font secret-text" x="610" y="208">Shared secret (derive ASCON key)</text>
+  <line x1="768" y1="224" x2="768" y2="368" stroke="#6d4fac" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#arrowPurple)"/>
+
+  <!-- Processor TEE -->
+  <rect x="72" y="248" width="418" height="368" rx="14" fill="#ffffff" stroke="#091b56" stroke-width="3"/>
+  <text class="font tee-title" x="281" y="288" text-anchor="middle">Processor TEE</text>
+  <g transform="translate(175, 300)" stroke="#091b56" stroke-width="2.5" fill="none">
+    <rect x="0" y="0" width="52" height="52" rx="4"/>
+    <rect x="14" y="14" width="24" height="24" rx="2" fill="#091b56" stroke="none"/>
+    <line x1="26" y1="-8" x2="26" y2="0"/><line x1="26" y1="52" x2="26" y2="60"/>
+    <line x1="-8" y1="26" x2="0" y2="26"/><line x1="52" y1="26" x2="60" y2="26"/>
+  </g>
+  <g transform="translate(335, 300)" fill="#091b56">
+    <rect x="16" y="28" width="28" height="22" rx="3"/>
+    <path d="M12,28 L12,20 Q12,8 30,8 Q48,8 48,20 L48,28" fill="none" stroke="#091b56" stroke-width="3"/>
+  </g>
+  <line x1="92" y1="368" x2="470" y2="368" stroke="#091b56" stroke-width="1.5"/>
+  <g transform="translate(100, 382)">
+    <path d="M8,22 L8,10 Q8,2 18,2 L22,2 Q32,2 32,10 L32,22 Z" fill="none" stroke="#091b56" stroke-width="2"/>
+    <text class="font tee-item" x="44" y="20">LightSaber KEM</text>
+  </g>
+  <line x1="92" y1="428" x2="470" y2="428" stroke="#091b56" stroke-width="1.5"/>
+  <g transform="translate(100, 442)">
+    <rect x="10" y="14" width="18" height="14" rx="2" fill="#091b56"/>
+    <path d="M6,14 L6,8 Q6,2 19,2 Q32,2 32,8 L32,14" fill="none" stroke="#091b56" stroke-width="2"/>
+    <text class="font tee-item" x="44" y="20">ASCON encrypt/decrypt</text>
+  </g>
+  <line x1="92" y1="488" x2="470" y2="488" stroke="#091b56" stroke-width="1.5"/>
+  <g transform="translate(100, 502)">
+    <circle cx="18" cy="8" r="7" fill="none" stroke="#091b56" stroke-width="2"/>
+    <path d="M6,28 Q18,18 30,28" fill="none" stroke="#091b56" stroke-width="2"/>
+    <text class="font tee-item" x="44" y="20">resource isolation</text>
+  </g>
+
+  <!-- DRAM PIM TEE -->
+  <rect x="1046" y="248" width="418" height="368" rx="14" fill="#ffffff" stroke="#091b56" stroke-width="3"/>
+  <text class="font tee-title" x="1255" y="288" text-anchor="middle">DRAM PIM TEE</text>
+  <g transform="translate(1120, 300)" stroke="#091b56" stroke-width="2" fill="none">
+    <rect x="0" y="8" width="70" height="36" rx="3"/>
+    <line x1="0" y1="18" x2="-8" y2="18"/><line x1="0" y1="34" x2="-8" y2="34"/>
+    <line x1="70" y1="18" x2="78" y2="18"/><line x1="70" y1="34" x2="78" y2="34"/>
+    <text class="font" x="35" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#091b56" stroke="none">DRAM</text>
+  </g>
+  <g transform="translate(1305, 300)" fill="#091b56">
+    <rect x="16" y="28" width="28" height="22" rx="3"/>
+    <path d="M12,28 L12,20 Q12,8 30,8 Q48,8 48,20 L48,28" fill="none" stroke="#091b56" stroke-width="3"/>
+  </g>
+  <line x1="1066" y1="368" x2="1444" y2="368" stroke="#091b56" stroke-width="1.5"/>
+  <g transform="translate(1074, 378)">
+    <circle cx="14" cy="14" r="6" fill="none" stroke="#091b56" stroke-width="2"/>
+    <circle cx="26" cy="14" r="6" fill="none" stroke="#091b56" stroke-width="2"/>
+    <text class="font tee-item" x="44" y="14" font-size="14px">
+      <tspan x="44" dy="0">ASCON decrypt → bulk bitwise compute</tspan>
+      <tspan x="44" dy="20">→ ASCON encrypt</tspan>
+    </text>
+  </g>
+  <line x1="1066" y1="448" x2="1444" y2="448" stroke="#091b56" stroke-width="1.5"/>
+  <g transform="translate(1074, 462)">
+    <path d="M8,22 L8,10 Q8,2 18,2 L22,2 Q32,2 32,10 L32,22 Z" fill="none" stroke="#091b56" stroke-width="2"/>
+    <text class="font tee-item" x="44" y="20">LightSaber KEM</text>
+  </g>
+  <line x1="1066" y1="508" x2="1444" y2="508" stroke="#091b56" stroke-width="1.5"/>
+  <g transform="translate(1074, 522)">
+    <path d="M6,24 Q18,4 30,24 Q24,20 18,24 Q12,20 6,24" fill="none" stroke="#091b56" stroke-width="2"/>
+    <text class="font tee-item" x="44" y="20">DRAM PUF root of trust</text>
+  </g>
+
+  <!-- Arrows to bus -->
+  <text class="font label-sm" x="430" y="418" text-anchor="middle">ciphertext only</text>
+  <line x1="490" y1="440" x2="588" y2="440" stroke="#091b56" stroke-width="4" marker-end="url(#arrowBlue)"/>
+  <text class="font label-sm" x="1106" y="418" text-anchor="middle">ciphertext only</text>
+  <line x1="1046" y1="440" x2="948" y2="440" stroke="#091b56" stroke-width="4" marker-end="url(#arrowBlue)"/>
+
+  <!-- Untrusted Memory Bus -->
+  <rect x="588" y="378" width="360" height="148" rx="12" fill="#fff8f3" stroke="#d9580a" stroke-width="3" stroke-dasharray="10 7"/>
+  <g transform="translate(732, 408)" fill="#d9580a">
+    <path d="M36,0 L72,62 L0,62 Z" fill="none" stroke="#d9580a" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="32" y="24" width="8" height="22" rx="1" fill="#d9580a"/>
+    <circle cx="36" cy="18" r="3" fill="#d9580a"/>
+  </g>
+  <text class="font bus-title" x="768" y="498" text-anchor="middle">Untrusted Memory Bus</text>
+
+  <!-- Bottom feature cards -->
+  <g id="card1">
+    <rect x="48" y="708" width="348" height="276" rx="10" fill="#fafafa" stroke="#d9580a" stroke-width="2.5"/>
+    <rect x="48" y="708" width="348" height="44" rx="10" fill="#d9580a"/>
+    <rect x="48" y="738" width="348" height="14" fill="#d9580a"/>
+    <text class="font card-header" x="222" y="737" text-anchor="middle">Post-quantum LightSaber KEM</text>
+    <g transform="translate(178, 778)" fill="#091b56">
+      <path d="M48,0 L48,8 Q48,28 28,36 L20,52 L68,52 L60,36 Q40,28 40,8 L40,0 Z" fill="none" stroke="#091b56" stroke-width="2.5"/>
+      <circle cx="48" cy="26" r="10" fill="none" stroke="#091b56" stroke-width="2"/>
+      <ellipse cx="48" cy="26" rx="14" ry="5" fill="none" stroke="#091b56" stroke-width="1.5" transform="rotate(-30 48 26)"/>
+      <ellipse cx="48" cy="26" rx="14" ry="5" fill="none" stroke="#091b56" stroke-width="1.5" transform="rotate(30 48 26)"/>
+    </g>
+    <text class="font card-body" x="222" y="870" text-anchor="middle">
+      <tspan x="222" dy="0">LightSaber is a post-quantum key</tspan>
+      <tspan x="222" dy="22">encapsulation mechanism (KEM) for</tspan>
+      <tspan x="222" dy="22">secure key establishment.</tspan>
+    </text>
+  </g>
+
+  <g id="card2">
+    <rect x="414" y="708" width="348" height="276" rx="10" fill="#fafafa" stroke="#d9580a" stroke-width="2.5"/>
+    <rect x="414" y="708" width="348" height="44" rx="10" fill="#d9580a"/>
+    <rect x="414" y="738" width="348" height="14" fill="#d9580a"/>
+    <text class="font card-header" x="588" y="737" text-anchor="middle">ASCON-128 AEAD</text>
+    <g transform="translate(544, 778)" fill="#091b56">
+      <path d="M48,0 L48,8 Q48,28 28,36 L20,52 L68,52 L60,36 Q40,28 40,8 L40,0 Z" fill="none" stroke="#091b56" stroke-width="2.5"/>
+      <rect x="38" y="24" width="20" height="16" rx="2" fill="#091b56"/>
+      <path d="M34,24 L34,18 Q34,12 48,12 Q62,12 62,18 L62,24" fill="none" stroke="#ffffff" stroke-width="2"/>
+    </g>
+    <text class="font card-body" x="588" y="870" text-anchor="middle">
+      <tspan x="588" dy="0">ASCON-128 provides lightweight,</tspan>
+      <tspan x="588" dy="22">efficient authenticated encryption</tspan>
+      <tspan x="588" dy="22">with strong security guarantees.</tspan>
+    </text>
+  </g>
+
+  <g id="card3">
+    <rect x="780" y="708" width="348" height="276" rx="10" fill="#fafafa" stroke="#d9580a" stroke-width="2.5"/>
+    <rect x="780" y="708" width="348" height="44" rx="10" fill="#d9580a"/>
+    <rect x="780" y="738" width="348" height="14" fill="#d9580a"/>
+    <text class="font card-header" x="954" y="737" text-anchor="middle">Unified TCB across CPU and memory</text>
+    <g transform="translate(910, 778)" stroke="#091b56" stroke-width="2" fill="none">
+      <rect x="8" y="8" width="36" height="36" rx="4"/>
+      <rect x="56" y="16" width="48" height="24" rx="3"/>
+      <path d="M44,26 Q64,4 84,26" stroke-dasharray="4 3"/>
+      <path d="M84,26 Q64,48 44,26" stroke-dasharray="4 3"/>
+    </g>
+    <text class="font card-body" x="954" y="870" text-anchor="middle">
+      <tspan x="954" dy="0">A single, consistent TCB and security</tspan>
+      <tspan x="954" dy="22">primitives span processor and memory</tspan>
+      <tspan x="954" dy="22">for end-to-end protection.</tspan>
+    </text>
+  </g>
+
+  <g id="card4">
+    <rect x="1146" y="708" width="342" height="276" rx="10" fill="#fafafa" stroke="#d9580a" stroke-width="2.5"/>
+    <rect x="1146" y="708" width="342" height="44" rx="10" fill="#d9580a"/>
+    <rect x="1146" y="738" width="342" height="14" fill="#d9580a"/>
+    <text class="font card-header" x="1317" y="737" text-anchor="middle">&gt; 20× vs PIM-AES</text>
+    <g transform="translate(1270, 778)" fill="#091b56">
+      <rect x="8" y="36" width="12" height="16" rx="1"/>
+      <rect x="26" y="28" width="12" height="24" rx="1"/>
+      <rect x="44" y="18" width="12" height="34" rx="1"/>
+      <rect x="62" y="8" width="12" height="44" rx="1"/>
+      <path d="M74,10 L98,0" fill="none" stroke="#091b56" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    </g>
+    <text class="font card-body" x="1317" y="870" text-anchor="middle">
+      <tspan x="1317" dy="0">YAVIN delivers over 20× higher</tspan>
+      <tspan x="1317" dy="22">performance compared to PIM-AES</tspan>
+      <tspan x="1317" dy="22">across key workloads.</tspan>
+    </text>
+  </g>
+</svg>
