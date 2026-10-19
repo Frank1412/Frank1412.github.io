@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
@@ -14,7 +13,7 @@ const Resume = () => (
     <article className="post" id="resume">
       <header>
         <div className="title">
-          <h2><Link to="/resume">Resume</Link></h2>
+          <h2>Resume</h2>
           <p className="page-subtitle">Curriculum Vitae (PDF)</p>
         </div>
       </header>

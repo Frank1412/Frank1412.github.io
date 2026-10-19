@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 import data from '../data/publications';
@@ -41,7 +40,7 @@ const Publications = () => {
       <article className="post" id="publications">
         <header>
           <div className="title">
-            <h2><Link to="/publications">Publications</Link></h2>
+            <h2>Publications</h2>
             <p className="page-subtitle">Conference papers, journals, posters, and preprints</p>
           </div>
         </header>

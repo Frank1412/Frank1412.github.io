@@ -34,7 +34,7 @@ const Index = () => (
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2><Link to="/">Welcome 欢迎</Link></h2>
+          <h2>Welcome 欢迎</h2>
           <p className="page-subtitle">
             Ph.D. candidate · Software &amp; Hardware Security · Syracuse University
           </p>

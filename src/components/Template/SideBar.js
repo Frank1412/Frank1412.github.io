@@ -13,9 +13,11 @@ const SideBar = () => (
       </Link>
       <header>
         <h2>Shouzhi&nbsp;Fang</h2>
+        <p className="name-zh" lang="zh-CN">方首智</p>
         <p>sfang18 at syr dot edu</p>
         {/* <p><a href="mailto:frank.kid1412@gmail.com">frank dot kid1412 at gmail dot com</a></p> */}
       </header>
+      <ContactIcons />
     </section>
 
     <section className="blurb">
@@ -34,7 +36,6 @@ const SideBar = () => (
     </section>
 
     <section id="footer">
-      <ContactIcons />
       <p className="copyright">&copy; Shouzhi Fang <Link to="/">frank1412.github.io</Link>.</p>
     </section>
   </section>

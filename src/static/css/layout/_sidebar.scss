@@ -13,8 +13,8 @@
 
 		> * {
 			border-top: solid 1px _palette(border);
-			margin: _size(section-spacing) 0 0 0;
-			padding: _size(section-spacing) 0 0 0;
+			margin: (_size(section-spacing) * 0.67) 0 0 0;
+			padding: (_size(section-spacing) * 0.67) 0 0 0;
 		}
 
 		> :first-child {
@@ -23,11 +23,17 @@
 			padding-top: 0;
 		}
 
+		// Stacked layout: lift the avatar/name above the main content,
+		// keep the rest of the sidebar below it.
 		@include breakpoint(large) {
-			border-top: solid 1px _palette(border);
-			margin: _size(section-spacing) 0 0 0;
-			min-width: 0;
-			padding: _size(section-spacing) 0 0 0;
-			width: 100%;
+			display: contents;
+
+			> * {
+				order: 1;
+			}
+
+			> #intro {
+				order: -1;
+			}
 		}
 	}

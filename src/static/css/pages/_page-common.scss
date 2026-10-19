@@ -1,6 +1,6 @@
 .page-subtitle {
   font-family: _font(family);
-  font-size: 0.95em;
+  font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -16,4 +16,46 @@
   margin: 0 0 1.75em;
   padding: 0 0.25em;
   max-width: 42em;
+}
+
+// Card look shared by every top-level page (home, about, projects, ...).
+#main > .post {
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  @include breakpoint(medium) {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  > header {
+    background: linear-gradient(135deg, rgba(46, 89, 186, 0.07) 0%, rgba(46, 89, 186, 0) 60%);
+  }
+
+  > header .title {
+    padding-top: 2em;
+    padding-bottom: 1.75em;
+
+    h2 {
+      display: inline-block;
+      margin-bottom: 0.5em;
+
+      // Accent rule spanning the heading text; the subtraction drops the
+      // trailing letter-spacing after the last glyph.
+      &::after {
+        content: '';
+        display: block;
+        width: calc(100% - #{_font(kerning-heading)});
+        height: 3px;
+        margin-top: 0.35em;
+        border-radius: 2px;
+        background: _palette(accent);
+      }
+    }
+
+    @include breakpoint(medium) {
+      padding: 0;
+    }
+  }
 }

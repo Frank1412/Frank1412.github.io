@@ -8,7 +8,7 @@
   }
 
   .publications-section {
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
 
     &:last-child {
       margin-bottom: 0;
@@ -16,7 +16,7 @@
   }
 
   .publications-category {
-    font-size: 0.75em;
+    font-size: 0.8em;
     font-weight: _font(weight-heading-bold);
     letter-spacing: _font(kerning-heading);
     text-transform: uppercase;
@@ -56,7 +56,7 @@
       .pub-title {
         display: block;
         font-weight: 700;
-        font-size: 1.02em;
+        font-size: 1.08em;
         line-height: 1.45;
         margin-bottom: 0.3em;
         color: _palette(fg-bold);
@@ -75,7 +75,7 @@
 
       .pub-authors {
         display: block;
-        font-size: 0.9em;
+        font-size: 0.98em;
         color: _palette(fg);
         margin-bottom: 0.2em;
         line-height: 1.55;
@@ -88,7 +88,7 @@
 
       .pub-venue {
         display: block;
-        font-size: 0.88em;
+        font-size: 0.95em;
         color: _palette(fg);
         line-height: 1.5;
       }
@@ -96,7 +96,7 @@
       .pub-link {
         display: inline-block;
         margin-top: 0.4em;
-        font-size: 0.82em;
+        font-size: 0.88em;
         font-weight: _font(weight-heading-bold);
         letter-spacing: 0.05em;
         text-decoration: none;

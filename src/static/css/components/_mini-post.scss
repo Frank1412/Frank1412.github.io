@@ -76,7 +76,7 @@
     .mini-post__subtitle {
       display: inline-block;
       font-family: _font(family-heading);
-      font-size: 0.62em;
+      font-size: 0.75em;
       font-weight: _font(weight-heading-bold);
       letter-spacing: _font(kerning-heading);
       line-height: 1.4;
@@ -92,7 +92,7 @@
     .published {
       display: block;
       font-family: _font(family-heading);
-      font-size: 0.68em;
+      font-size: 0.82em;
       font-weight: _font(weight-heading);
       letter-spacing: _font(kerning-heading);
       margin: 0;
@@ -111,7 +111,7 @@
     border-top: solid 1px _palette(border);
 
     p {
-      font-size: 0.95rem;
+      font-size: 1.05rem;
       line-height: 1.7;
       margin: 0;
       padding: 1.35em 1.5em 1.5em;
